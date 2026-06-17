@@ -7,13 +7,12 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <div className="page">
-      <p className="page-label">Doelenia</p>
-      <h1 className="page-title">About</h1>
-      <div className="page-divider" />
+      <p className="caption">Doelenia</p>
+      <h1 className="title">About</h1>
 
       <div className="page-body">
         <p>
-          Doelenian Ommia Kazen exists to support and protect those determined
+          <span className="name">Doelenia Ommia Kazen</span> exists to support and protect those determined
           to practice the full range of what it means to be human — against a
           world that too often asks us only to survive.
         </p>
@@ -25,7 +24,7 @@ export default function About() {
       </div>
 
       <div className="page-section">
-        <p className="page-section-label">Main Belief</p>
+        <p className="caption">Main Belief</p>
         <div className="page-body">
           <p>
             We believe that the nature of human is not just to survive and be
@@ -37,7 +36,7 @@ export default function About() {
       </div>
 
       <div className="page-section">
-        <p className="page-section-label">Strategy</p>
+        <p className="caption">Strategy</p>
         <div className="page-body">
           <p>
             To create an unbreakable organization that supports and protects
@@ -47,7 +46,7 @@ export default function About() {
       </div>
 
       <div className="page-section">
-        <p className="page-section-label">The Four Core Qualities</p>
+        <p className="caption">The Four Core Qualities</p>
         <ul className="qualities">
           <li>
             <strong>Jahlah —</strong> Embrace the humility of personal

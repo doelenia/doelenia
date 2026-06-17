@@ -1,15 +1,14 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'The Doelenian Book',
+  title: 'The Doelenia Book',
 }
 
 export default function Book() {
   return (
     <div className="page">
-      <p className="page-label">Minavax</p>
-      <h1 className="page-title">The Doelenian Book</h1>
-      <div className="page-divider" />
+      <p className="caption">Minavax</p>
+      <h1 className="title">The Doelenia Book</h1>
 
       <div className="page-body">
         <p>
@@ -22,13 +21,13 @@ export default function Book() {
           challenge, and advance our core philosophy over time.
         </p>
         <p>
-          It belongs to everyone who carries the Doelenian commitment —
+          It belongs to everyone who carries the Doelenia commitment —
           and asks only to be used, not worshipped.
         </p>
       </div>
 
       <div className="page-section">
-        <p className="page-section-label">Core Assumptions</p>
+        <p className="caption">Core Assumptions</p>
         <ul className="qualities">
           <li>
             <strong>Whole Truth Cannot Be Known —</strong> No human has the

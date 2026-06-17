@@ -7,9 +7,8 @@ export const metadata: Metadata = {
 export default function Jah() {
   return (
     <div className="page">
-      <p className="page-label">Ommivax</p>
-      <h1 className="page-title">Jah</h1>
-      <div className="page-divider" />
+      <p className="caption">Ommivax</p>
+      <h1 className="title">Jah</h1>
 
       <div className="page-body">
         <p>

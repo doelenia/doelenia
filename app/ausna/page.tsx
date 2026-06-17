@@ -7,9 +7,8 @@ export const metadata: Metadata = {
 export default function Ausna() {
   return (
     <div className="page">
-      <p className="page-label">Ommivax</p>
-      <h1 className="page-title">Ausna</h1>
-      <div className="page-divider" />
+      <p className="caption">Ommivax</p>
+      <h1 className="title">Ausna</h1>
 
       <div className="page-body">
         <p>
@@ -31,8 +30,8 @@ export default function Ausna() {
           rel="noopener noreferrer"
           className="page-link"
         >
-          <span className="page-link-label">Platform</span>
-          <span className="page-link-text">ausna.co</span>
+          <span className="caption">Platform</span>
+          <span className="subtitle">ausna.co</span>
         </a>
         <a
           href="https://ausna-issue.notion.site"
@@ -40,8 +39,8 @@ export default function Ausna() {
           rel="noopener noreferrer"
           className="page-link"
         >
-          <span className="page-link-label">Open Call</span>
-          <span className="page-link-text">Issue 0 — Submit your trajectory</span>
+          <span className="caption">Open Call</span>
+          <span className="subtitle">Issue 0 — Submit your trajectory</span>
         </a>
       </div>
     </div>

@@ -1,19 +1,11 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/nav'
-
-const cormorant = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  style: ['normal', 'italic'],
-  variable: '--font-cormorant',
-  display: 'swap',
-})
+import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Doelenian Ommia Kazen',
+    default: 'Doelenia Ommia Kazen',
     template: '%s — DOK',
   },
   description: 'The Resort for Humanity.',
@@ -35,13 +27,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={cormorant.variable}>
+    <html lang="en">
       <body>
         <Nav />
         <main>{children}</main>
-        <footer>
-          <p>© 2026 Doelenian Ommia Kazen</p>
-        </footer>
+        <Footer />
       </body>
     </html>
   )
