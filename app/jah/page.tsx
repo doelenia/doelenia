@@ -21,6 +21,18 @@ export default function Jah() {
           of the human-centered life.
         </p>
       </div>
+
+      <div className="page-links">
+        <a
+          href="https://github.com/doelenia/jah"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="page-link"
+        >
+          <span className="caption">Repository</span>
+          <span className="subtitle">github.com/doelenia/jah</span>
+        </a>
+      </div>
     </div>
   )
 }
