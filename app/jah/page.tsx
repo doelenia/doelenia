@@ -1,24 +1,27 @@
 import type { Metadata } from 'next'
+import { T } from '@/components/language'
+import { pageTitle } from '@/components/site-lang'
 
-export const metadata: Metadata = {
-  title: 'Jah',
+export async function generateMetadata(): Promise<Metadata> {
+  return { title: await pageTitle('jah.title') }
 }
 
 export default function Jah() {
   return (
     <div className="page">
-      <p className="caption">Ommivax</p>
-      <h1 className="title">Jah</h1>
+      <p className="caption">
+        <T k="jah.kicker" />
+      </p>
+      <h1 className="title">
+        <T k="jah.title" />
+      </h1>
 
       <div className="page-body">
         <p>
-          A local-first personal operating system built around the belief that
-          a human life deserves structure, memory, and intention.
+          <T k="jah.p1" />
         </p>
         <p>
-          Jah holds the context of a person's work, relationships, and
-          commitments — not as productivity software, but as a living record
-          of the human-centered life.
+          <T k="jah.p2" />
         </p>
       </div>
 
@@ -29,8 +32,12 @@ export default function Jah() {
           rel="noopener noreferrer"
           className="page-link"
         >
-          <span className="caption">Repository</span>
-          <span className="subtitle">github.com/doelenia/jah</span>
+          <span className="caption">
+            <T k="jah.repo" />
+          </span>
+          <span className="subtitle">
+            <T k="jah.repo.sub" />
+          </span>
         </a>
       </div>
     </div>
