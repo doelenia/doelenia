@@ -12,9 +12,7 @@ export default function About() {
 
       <div className="page-body">
         <p>
-          <span className="name">Doelenia Ommia Kazen</span> exists to support and protect those determined
-          to practice the full range of what it means to be human — against a
-          world that too often asks us only to survive.
+          <span className="name">Doelenia Ommia Kazen</span> is an ark for humanity that pursues a renaissance system running on the full potential of humanity.
         </p>
         <p>
           We are an alliance. Not a platform, not a brand. A commitment to the

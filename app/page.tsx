@@ -12,7 +12,7 @@ export default function Home() {
         priority
       />
       <h1 className="title name">Doelenia Ommia Kazen</h1>
-      <p className="subtitle muted">The Resort for Humanity.</p>
+      <p className="subtitle muted">The Ark for Humanity.</p>
     </div>
   )
 }

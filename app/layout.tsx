@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: 'Doelenia Ommia Kazen',
     template: '%s — DOK',
   },
-  description: 'The Resort for Humanity.',
+  description: 'The Ark for Humanity.',
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
