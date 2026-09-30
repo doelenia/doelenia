@@ -1,31 +1,30 @@
 import type { Metadata } from 'next'
+import { T } from '@/components/language'
+import { pageTitle } from '@/components/site-lang'
 
-export const metadata: Metadata = {
-  title: 'Ausna',
+export async function generateMetadata(): Promise<Metadata> {
+  return { title: await pageTitle('ausna.title') }
 }
 
 export default function Ausna() {
   return (
     <div className="page">
-      <p className="caption">Ommivax</p>
-      <h1 className="title">Ausna</h1>
+      <p className="caption">
+        <T k="ausna.kicker" />
+      </p>
+      <h1 className="title">
+        <T k="ausna.title" />
+      </h1>
 
       <div className="page-body">
         <p>
-          A society to explore &amp; foster what humanity can become. Au- means
-          human; -sna, the traces we leave — Ausna is what a human leaves to
-          the world.
+          <T k="ausna.p1" />
         </p>
         <p>
-          We believe humanity is the greatest work we leave to the world, and
-          that its future emerges between people. Ausna gathers the people who
-          carry it and grows it together, so it can take root and make the
-          impossible possible.
+          <T k="ausna.p2" />
         </p>
         <p>
-          Within it, we cultivate each person&apos;s humanity, rebuild the
-          topics the world has left unexplored, and carry forward the projects
-          that reach toward what humanity can become.
+          <T k="ausna.p3" />
         </p>
       </div>
 
@@ -36,8 +35,12 @@ export default function Ausna() {
           rel="noopener noreferrer"
           className="page-link"
         >
-          <span className="caption">Manifesto</span>
-          <span className="subtitle">What Ausna is, and why</span>
+          <span className="caption">
+            <T k="ausna.manifesto" />
+          </span>
+          <span className="subtitle">
+            <T k="ausna.manifesto.sub" />
+          </span>
         </a>
         <a
           href="https://ausna.substack.com"
@@ -45,8 +48,12 @@ export default function Ausna() {
           rel="noopener noreferrer"
           className="page-link"
         >
-          <span className="caption">Writings</span>
-          <span className="subtitle">Conversations from the society</span>
+          <span className="caption">
+            <T k="ausna.writings" />
+          </span>
+          <span className="subtitle">
+            <T k="ausna.writings.sub" />
+          </span>
         </a>
         <a
           href="https://achieved-mind-fe1.notion.site/44a4cc8372364aec967801cfe6de012c"
@@ -54,8 +61,12 @@ export default function Ausna() {
           rel="noopener noreferrer"
           className="page-link"
         >
-          <span className="caption">Join</span>
-          <span className="subtitle">Interest form</span>
+          <span className="caption">
+            <T k="ausna.join" />
+          </span>
+          <span className="subtitle">
+            <T k="ausna.join.sub" />
+          </span>
         </a>
       </div>
     </div>

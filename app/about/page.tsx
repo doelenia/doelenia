@@ -1,69 +1,71 @@
 import type { Metadata } from 'next'
+import { T } from '@/components/language'
+import { pageTitle } from '@/components/site-lang'
 
-export const metadata: Metadata = {
-  title: 'About',
+export async function generateMetadata(): Promise<Metadata> {
+  return { title: await pageTitle('about.title') }
 }
 
 export default function About() {
   return (
     <div className="page">
-      <p className="caption">Doelenia</p>
-      <h1 className="title">About</h1>
+      <p className="caption">
+        <T k="about.kicker" />
+      </p>
+      <h1 className="title">
+        <T k="about.title" />
+      </h1>
 
       <div className="page-body">
         <p>
-          <span className="name">Doelenia Ommia Kazen</span> is an ark for humanity that pursues a renaissance system running on the full potential of humanity.
+          <span className="name">
+            <T k="home.name" />
+          </span>{' '}
+          <T k="about.def" />
         </p>
         <p>
-          We are an alliance. Not a platform, not a brand. A commitment to the
-          belief that every human being carries within them the right and the
-          capacity to explore, create, feel, and believe.
+          <T k="about.alliance" />
         </p>
       </div>
 
       <div className="page-section">
-        <p className="caption">Main Belief</p>
+        <p className="caption">
+          <T k="about.belief.kicker" />
+        </p>
         <div className="page-body">
           <p>
-            We believe that the nature of human is not just to survive and be
-            safe — like other creatures on Earth. It is to explore, to create,
-            to feel (love or hate), and to believe. This is the path that can
-            be assured on humanity.
+            <T k="about.belief" />
           </p>
         </div>
       </div>
 
       <div className="page-section">
-        <p className="caption">Strategy</p>
+        <p className="caption">
+          <T k="about.strategy.kicker" />
+        </p>
         <div className="page-body">
           <p>
-            To create an unbreakable organization that supports and protects
-            people and organizations determined and able to practice this belief.
+            <T k="about.strategy" />
           </p>
         </div>
       </div>
 
       <div className="page-section">
-        <p className="caption">The Four Core Qualities</p>
+        <p className="caption">
+          <T k="about.qualities.kicker" />
+        </p>
         <ul className="qualities">
           <li>
-            <strong>Jahlah —</strong> Embrace the humility of personal
-            ignorance and seek unyielding truth about the nature of humanity,
-            society, and existence.
+            <strong>Jahlah —</strong> <T k="about.jahlah" />
           </li>
           <li>
-            <strong>Iksanah —</strong> Acknowledge the emotional essence of
-            humanity while employing rationality to act with wisdom and
-            strategy.
+            <strong>Iksanah —</strong> <T k="about.iksanah" />
           </li>
           <li>
-            <strong>Katah —</strong> Remain truthful to oneself and those
-            worthy of trust, wielding deception only when it serves a higher
-            purpose.
+            <strong>Katah —</strong> <T k="about.katah" />
           </li>
           <li>
-            <strong>Fesuanah —</strong> Cultivate empathy toward all beings
-            and nurture an enduring love for humanity's various well-being.
+            <strong>Fesuanah —</strong> <T k="about.fesuanah" />
           </li>
         </ul>
       </div>

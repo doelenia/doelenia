@@ -22,6 +22,7 @@
 
 html {
   font-size: 18px;
+  background: var(--bg);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -91,7 +92,7 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 400;
   height: var(--header-height);
   padding: 0 2rem;
   display: flex;
@@ -110,6 +111,34 @@ button {
   width: 24px;
   height: 24px;
   object-fit: contain;
+}
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.lang-toggle button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.lang-toggle button[aria-pressed='true'] {
+  color: var(--text);
+}
+
+.lang-toggle button:hover {
+  color: var(--text);
 }
 
 .header-menu-btn {
@@ -166,6 +195,14 @@ button {
 .directory-link:hover,
 .directory-link.active {
   color: var(--text);
+}
+
+.directory-lang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1.5rem;
 }
 
 /* ── Main ── */

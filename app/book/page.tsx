@@ -1,50 +1,61 @@
 import type { Metadata } from 'next'
+import { T } from '@/components/language'
+import { pageTitle } from '@/components/site-lang'
 
-export const metadata: Metadata = {
-  title: 'The Doelenia Book',
+export async function generateMetadata(): Promise<Metadata> {
+  return { title: await pageTitle('book.title') }
 }
 
 export default function Book() {
   return (
     <div className="page">
-      <p className="caption">Minavax</p>
-      <h1 className="title">The Doelenia Book</h1>
+      <p className="caption">
+        <T k="book.kicker" />
+      </p>
+      <h1 className="title">
+        <T k="book.title" />
+      </h1>
 
       <div className="page-body">
         <p>
-          A living record of understanding — about existence, humanity, and
-          the world. Built to be concise, precise, honest, and enduring.
+          <T k="book.p1" />
         </p>
         <p>
-          Not a monument to certainty, but a tool for thinking. The book
-          records current understanding to make it possible to build upon,
-          challenge, and advance our core philosophy over time.
+          <T k="book.p2" />
         </p>
         <p>
-          It belongs to everyone who carries the Doelenia commitment —
-          and asks only to be used, not worshipped.
+          <T k="book.p3" />
         </p>
       </div>
 
       <div className="page-section">
-        <p className="caption">Core Assumptions</p>
+        <p className="caption">
+          <T k="book.assumptions" />
+        </p>
         <ul className="qualities">
           <li>
-            <strong>Whole Truth Cannot Be Known —</strong> No human has the
-            real truth. Everyone could hold some part of it.
+            <strong>
+              <T k="book.a1.name" /> —
+            </strong>{' '}
+            <T k="book.a1" />
           </li>
           <li>
-            <strong>Logic Is the Top Belief —</strong> We put our undoubted
-            faith into the power of logic.
+            <strong>
+              <T k="book.a2.name" /> —
+            </strong>{' '}
+            <T k="book.a2" />
           </li>
           <li>
-            <strong>True Knowledge Never Changes —</strong> The true knowledge
-            of a particular world will never change.
+            <strong>
+              <T k="book.a3.name" /> —
+            </strong>{' '}
+            <T k="book.a3" />
           </li>
           <li>
-            <strong>Right to Represent —</strong> A person must always
-            preserve the right to represent themselves — and only themselves —
-            at any given moment.
+            <strong>
+              <T k="book.a4.name" /> —
+            </strong>{' '}
+            <T k="book.a4" />
           </li>
         </ul>
       </div>
