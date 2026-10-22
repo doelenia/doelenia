@@ -121,6 +121,16 @@ export const strings = {
   'ausna.writings.sub': { en: 'Conversations from the society', dln: 'oun to tahax' },
   'ausna.join': { en: 'Join', dln: 'vin' },
   'ausna.join.sub': { en: 'Interest form', dln: 'vinsna' },
+  'ausna.buenosAires.now': { en: 'Now', dln: 'neh' },
+  'ausna.buenosAires': { en: 'Buenos Aires', dln: 'Buenos Aires' },
+  'ausna.buenosAires.question': {
+    en: 'How can we rebuild a society for human creativity?',
+    dln: 'Jan san lih, vel povax, mei oun, nel auzen mei.',
+  },
+  'ausna.buenosAires.dates': {
+    en: 'Nov 21 – Dec 19',
+    dln: '11.21 – 12.19',
+  },
 
   'jah.kicker': { en: 'Ommivax', dln: 'Ommivax' },
   'jah.title': { en: 'Jah', dln: 'Jah' },
