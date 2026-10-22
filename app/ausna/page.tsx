@@ -69,6 +69,25 @@ export default function Ausna() {
           </span>
         </a>
       </div>
+
+      <a
+        href="https://ausna-issue.notion.site/3fe94639385b818a9c73d4fe6ed38e9f"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="live-card"
+      >
+        <span className="caption">
+          <T k="ausna.buenosAires.now" />
+          {' · '}
+          <T k="ausna.buenosAires" />
+        </span>
+        <span className="subtitle">
+          <T k="ausna.buenosAires.question" />
+        </span>
+        <span className="caption">
+          <T k="ausna.buenosAires.dates" />
+        </span>
+      </a>
     </div>
   )
 }

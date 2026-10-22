@@ -226,6 +226,15 @@ Keep this line as the test of the grammar. If a new rule cannot read it, the rul
 
 Haseva (the stellar field, spoken as a stem) is the field of the stars.
 
+## Counting
+
+A count is written with the ordinary numerals: 1, 2, 3, 10, 21. The numerals are not words, so they are not in the lexicon. `kan` stays the spoken word for four, as in the four core qualities. `na` stays one being.
+
+A date is the month, a dot, and the day. `11.21` is the twenty-first of the eleventh month. A dash joins a range.
+
+> 11.21 – 12.19
+> Nov 21 – Dec 19
+
 ## What may be added
 
 A new root is allowed when the thing is fundamental or holy and no word yet names it. Mark it `new`. If the thing is not fundamental, compound it from roots already in the lexicon and mark it `derived`. Do not add a new particle unless `nes`, `ne`, `to`, `no`, `nun`, `eh`, `bah`, `yoh`, `nel`, `ke`, and `hem` cannot say the thing.
